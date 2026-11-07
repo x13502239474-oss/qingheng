@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6f7f3" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="轻衡 · 个人体重与饮食记录工具。无需账号，数据仅保存在本机浏览器。" />
+  <title>轻衡 · 体重与饮食记录</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232e6f4e'/%3E%3Crect x='8' y='15' width='5' height='9' rx='2.5' fill='%23fff'/%3E%3Crect x='14.5' y='9' width='5' height='15' rx='2.5' fill='%23fff'/%3E%3Crect x='21' y='12' width='5' height='12' rx='2.5' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header id="topbar" class="topbar"></header>
+    <main id="view" class="view"></main>
+    <nav id="tabbar" class="tabbar" aria-label="主导航"></nav>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="false"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

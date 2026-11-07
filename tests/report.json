@@ -1,0 +1,272 @@
+{
+  "checks": [
+    {
+      "name": "0. 空数据时不生成虚构趋势图",
+      "ok": true,
+      "detail": "最近 30 天里还没有体重记录"
+    },
+    {
+      "name": "1. 可设置初始体重和目标体重",
+      "ok": true,
+      "detail": "{\"initialWeight\":72,\"targetWeight\":62,\"startDate\":\"2026-10-08\",\"targetDate\":\"2027-01-06\",\"dailyCalorieGoal\":1800,\"height\":170}"
+    },
+    {
+      "name": "1b. 可设置计划日期与每日热量目标",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1c. 目标页提供 BMI 参考与免责说明",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "2. 可添加体重记录（多条）",
+      "ok": true,
+      "detail": "条数=4"
+    },
+    {
+      "name": "3. 体重趋势图随真实记录更新",
+      "ok": true,
+      "detail": "SVG 折线已渲染"
+    },
+    {
+      "name": "2b. 同一天重复填写会更新，不产生重复数据",
+      "ok": true,
+      "detail": "条数=4"
+    },
+    {
+      "name": "2c. 历史体重记录提供修改入口",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "2c. 可修改历史体重记录",
+      "ok": true,
+      "detail": "新值=71.2"
+    },
+    {
+      "name": "3b. 体重图表 7 范围正常",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "3b. 体重图表 30 范围正常",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "3b. 体重图表 90 范围正常",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "3b. 体重图表 all 范围正常",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "2d. 删除体重记录前二次确认",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "2d. 取消确认不会删除数据",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "2d. 确认后可删除体重记录",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "4. 可连续添加当天多种饮食记录",
+      "ok": true,
+      "detail": "条数=6"
+    },
+    {
+      "name": "5. 自动汇总当天总热量 = 1220 kcal",
+      "ok": true,
+      "detail": "合计=1220"
+    },
+    {
+      "name": "5b. 按餐次分组显示小计（早 290 / 午 450 / 晚 400）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "8. 展示每日目标、剩余热量与完成比例",
+      "ok": true,
+      "detail": "比例=68%"
+    },
+    {
+      "name": "6a. 修改饮食记录后热量同步更新为 1280",
+      "ok": true,
+      "detail": "合计=1280"
+    },
+    {
+      "name": "6b. 删除饮食记录前二次确认",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "6b. 删除饮食记录后热量同步更新为 1200",
+      "ok": true,
+      "detail": "合计=1200"
+    },
+    {
+      "name": "7a. 可切换到过去某一天",
+      "ok": true,
+      "detail": "2026-11-04"
+    },
+    {
+      "name": "7b. 可查看/添加过去某天饮食并汇总",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "7c. 回到今天仍正确显示 1200 kcal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "7d. 30 天每日热量趋势图正常",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "7e. 历史页按日期对齐体重与当日热量",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "7f. 历史页显示每周平均摄入热量",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "8a. 可调整每日热量目标",
+      "ok": true,
+      "detail": "目标=1600"
+    },
+    {
+      "name": "8b. 调整后页面立即显示新目标",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "8c. 可移除每日热量目标",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "8d. 未设置目标时只显示实际摄入，不显示剩余热量",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "10a. 导出生成 JSON 备份文件",
+      "ok": true,
+      "detail": "轻衡备份-2026-11-07.json"
+    },
+    {
+      "name": "10b. 导出内容包含全部记录与设置",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "10c. 恢复数据前二次确认",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "10d. JSON 恢复后数据被正确替换",
+      "ok": true,
+      "detail": "目标=60"
+    },
+    {
+      "name": "10e. 可再次恢复原备份",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "10f. 清空需输入「清空」，不匹配时不删除",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "10g. 二次确认后清空生效",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "10h. 清空后仍能从备份完整恢复",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "首页展示体重概览全部字段",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "首页展示今日热量 / 目标 / 比例 / 剩余预算",
+      "ok": true,
+      "detail": "预期 67%"
+    },
+    {
+      "name": "首页展示今日记录状态与最近记录时间",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "无虚构数据：记录条数与存储一致",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "9. 刷新网页后全部记录保留",
+      "ok": true,
+      "detail": "体重 4 条 / 饮食 6 条 / 目标 62 kg"
+    },
+    {
+      "name": "9b. 刷新后首页仍正确渲染",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "11a. 桌面：顶部导航 / 底部标签隐藏 / 首页双栏 / 无横向溢出",
+      "ok": true,
+      "detail": "{\"innerWidth\":1280,\"tabbar\":\"none\",\"deskNav\":\"flex\",\"homeCols\":2,\"overflow\":0,\"quickButtons\":2}"
+    },
+    {
+      "name": "11b. 手机：底部标签 / 顶部导航隐藏 / 快捷入口可用 / 无横向溢出",
+      "ok": true,
+      "detail": "{\"innerWidth\":390,\"tabbar\":\"grid\",\"deskNav\":\"none\",\"homeCols\":1,\"overflow\":0,\"quickButtons\":2}"
+    },
+    {
+      "name": "11c. 手机端快捷入口可跳转到饮食页",
+      "ok": true,
+      "detail": "#/diet"
+    }
+  ],
+  "pass": 50,
+  "fail": 0,
+  "desktop": {
+    "innerWidth": 1280,
+    "tabbar": "none",
+    "deskNav": "flex",
+    "homeCols": 2,
+    "overflow": 0,
+    "quickButtons": 2
+  },
+  "mobile": {
+    "innerWidth": 390,
+    "tabbar": "grid",
+    "deskNav": "none",
+    "homeCols": 1,
+    "overflow": 0,
+    "quickButtons": 2
+  }
+}

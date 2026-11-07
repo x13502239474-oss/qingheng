@@ -1,0 +1,16 @@
+{
+  "name": "qingheng-health-journal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "轻衡 · 个人体重、饮食热量与减重计划记录（数据仅存本地浏览器，零运行时依赖）",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "test": "node --test tests/unit.test.mjs",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
